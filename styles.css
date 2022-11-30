@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+span {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 13ch; /* este el numero de caracteres que tiene el span */
+  animation: typing 2s steps(13), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
